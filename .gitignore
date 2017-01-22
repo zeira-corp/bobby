@@ -1,0 +1,7 @@
+informations.md
+babs/*
+buster/*
+node_modules/
+npm-debug.log
+.idea/
+.DS_Store
