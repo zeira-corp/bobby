@@ -16,8 +16,5 @@
   },
   "scripts":{
     "start": "./bin/hubot -a rocketchat"
-  },
-  "engines": {
-    "node": "0.10.x"
   }
 }
