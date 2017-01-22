@@ -14,4 +14,11 @@ module.exports =  (robot) =>  {
     res.send(`yo ${res.message.user.name}`);
   });
 
+  // listen CI server
+  // CI server post on this route when it wants to send information to Bob
+  robot.router.post(process.env.FROM_GITHUB_HOOK, (req, res) => {
+    robot.messageRoom('general', req.body.message)
+    res.status(200).end()
+  })
+
 };
