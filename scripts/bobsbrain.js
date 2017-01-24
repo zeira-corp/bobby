@@ -27,7 +27,7 @@ module.exports =  (robot) =>  {
     res.send({message:"yo"})
     //res.status(201).end();
   });
-
+  // for tests
   robot.router.get(`/hey/iam/bob/`, (req, res) => {
     res.send({message:"yo"})
   });
