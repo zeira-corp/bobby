@@ -13,6 +13,8 @@ fetch(`${hubot_url}/general`, {
     message: "bob help me with java"
   })
 })
+.then(response => response.json())
+.then(jsonData => console.log(jsonData));
 
 fetch(`${hubot_url}/random`, {
   method: 'POST',
@@ -24,7 +26,8 @@ fetch(`${hubot_url}/random`, {
     message: "I'm upset"
   })
 })
-
+.then(response => response.json())
+.then(jsonData => console.log(jsonData));
 
 fetch(`${hubot_url}/general`, {
   method: 'POST',
@@ -36,3 +39,5 @@ fetch(`${hubot_url}/general`, {
     message: "bob yo"
   })
 })
+.then(response => response.json())
+.then(jsonData => console.log(jsonData));

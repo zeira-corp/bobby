@@ -25,7 +25,7 @@ module.exports =  (robot) =>  {
   robot.router.post(`/hey/iam/bob/:room`, (req, res) => {
     console.log(req.body, req.params);
 
-    res.send({answer:req.body, room: req.params.room})
+    res.send({message:"yo"})
     //res.status(201).end();
   });
 
