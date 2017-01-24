@@ -28,4 +28,8 @@ module.exports =  (robot) =>  {
     //res.status(201).end();
   });
 
+  robot.router.get(`/hey/iam/bob/`, (req, res) => {
+    res.send({message:"yo"})
+  });
+
 };
