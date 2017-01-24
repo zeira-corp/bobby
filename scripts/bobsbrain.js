@@ -24,7 +24,6 @@ module.exports =  (robot) =>  {
   // display the response of BoBBy
   robot.router.post(`/hey/iam/bob/:room`, (req, res) => {
     console.log(req.body, req.params);
-
     res.send({message:"yo"})
     //res.status(201).end();
   });
